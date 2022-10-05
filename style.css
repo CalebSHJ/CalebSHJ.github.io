@@ -1,0 +1,41 @@
+body {
+  margin:0;
+  padding: 0;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 45px;
+  margin: 50px auto; 
+  color: rgb(178, 137, 60);
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.project-link {
+  margin-right: 3rem;
+}
+.project-link li {
+  list-style: none;
+  margin: 20px auto;
+  width: 40%;
+  background-color: rgb(178, 137, 60);
+  padding: 10px 0;
+}
+
+.project-link li a {
+  text-decoration: none;
+  font-size: 20px;
+  color: antiquewhite;
+}
+.project-link li:hover {
+  background-color: rgb(171, 161, 142);
+}
+
+
+
+
+
