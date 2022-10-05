@@ -16,20 +16,26 @@ h2 {
 }
 
 .project-link {
-  margin-right: 3rem;
+  margin: auto;
+  width: 50%;
 }
 .project-link li {
   list-style: none;
   margin: 20px auto;
-  width: 40%;
+  width: 50%;
   background-color: rgb(178, 137, 60);
-  padding: 10px 0;
+  padding: 0;
 }
 
 .project-link li a {
   text-decoration: none;
   font-size: 20px;
   color: antiquewhite;
+}
+
+.project-link li a img {
+  width: 70%;
+  height: 300px;
 }
 .project-link li:hover {
   background-color: rgb(171, 161, 142);
