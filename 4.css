@@ -351,11 +351,17 @@ footer > p {
    main form .form-title {
     font-size: 18px;
 }
+  main form .quote-btn {
+    font-size: 14px;
+  }
  main #features .feature-detail h3 {
     font-size: 21px;
   }
 @media (max-width:450px) {
   main form .form-title {
     font-size: 17px;
+  main form .quote-btn {
+    font-size: 13px;
+  }
    
 }
