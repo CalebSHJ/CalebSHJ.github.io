@@ -92,9 +92,11 @@ main form label input {
 
 main form .quote-btn {
   background-color:rgb(197, 126, 100);
+  text-align: center;
   width: 45%;
   height: 2rem;
   font-size: 20px;
+  padding: 0;
   color: aliceblue;
 }
 
@@ -342,6 +344,8 @@ footer > p {
   }
   main form .quote-btn {
     font-size: 16px;
+    text-align: center;
+    padding: 0;
   }
   main #features .feature-detail h3 {
     font-size: 24px;
@@ -353,6 +357,8 @@ footer > p {
 }
   main form .quote-btn {
     font-size: 14px;
+    text-align: center;
+    padding: 0;
   }
  main #features .feature-detail h3 {
     font-size: 21px;
@@ -361,7 +367,9 @@ footer > p {
   main form .form-title {
     font-size: 17px;
   main form .quote-btn {
-    font-size: 13px;
+    font-size: 12px;
+    text-align: center;
+    padding: 0;
   }
    
 }
