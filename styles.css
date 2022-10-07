@@ -1,0 +1,304 @@
+:root {
+  --theme-color1: rgb(210, 110, 73);
+  --theme-color2: rgb(30, 128, 106);
+  --text-color1: aliceblue;
+  --text-color2: rgb(118, 222, 142);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-padding-top: 4rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0; 
+  min-width: 390px;
+}
+
+#navbar {
+  background-color: var(--theme-color1);
+  margin: 0;
+  width: 100vw;
+  height: 75px;
+  position: fixed;
+  top: 0;
+  padding-top: 4px;
+}
+
+#navbar ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3rem;
+  padding: 0 3rem;
+}
+
+#navbar ul li {
+  list-style: none;
+}
+
+#navbar ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--text-color1);
+}
+
+#navbar ul li a:hover {
+  background: linear-gradient(45deg, var(--theme-color1), var(--theme-color2), var(--text-color2));
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#welcome-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(45deg, var(--theme-color1), var(--theme-color2));
+}
+
+#welcome-section .welcome-title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#welcome-section .welcome-title h1 {
+  font-size: 4rem;
+  color: var(--text-color2);
+}
+
+#welcome-section .welcome-title span {
+  font-size: 4rem;
+  animation: 2s linear infinite wave;
+  margin-right: 1rem;
+}
+
+@keyframes wave {
+  20% {
+    transform: rotate(-30deg) scaleX(1);
+  }
+  40% {
+    transform: rotate(-15deg) scaleX(1);
+  }
+  60% {
+    transform: rotate(15deg) scaleX(1);
+  }
+  80% {
+    transform: rotate(30deg) scaleX(1);
+  }
+}
+
+#welcome-section p {
+  font-size: 2rem;
+  color: var(--text-color1);
+  margin-top: -2.5rem;
+  padding-left: 3.2rem;;
+}
+
+#projects {
+  background-color: var(--theme-color2);
+  width: 100vw;
+  /* height: 100%; */
+  margin-top: -2.2rem;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 2.6rem;
+  padding: 5rem 0 2.5rem 0;
+  color: var(--text-color1);
+}
+
+#projects .project-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#projects .project-links a {
+  width: 300px;
+  height: 250px;
+  min-width: 300px;
+  margin: 30px 0;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+#projects .project-links a p {
+  color: var(--text-color1);
+  font-size: 1.3rem;
+  background-color: var(--theme-color1);
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  padding-top: 12px;
+}
+
+#projects .project-links a img {
+  display: block;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+#projects .project-more {
+  font-size: 20px;
+  margin-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+#projects .project-more a{
+  font-size: 1.6rem;
+  background: var(--theme-color1);
+  text-decoration: none;
+  color: var(--text-color1);
+  border: 1px solid var(--text-color2);
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+#projects .project-more a:hover {
+  background: linear-gradient(45deg, var(--theme-color1), var(--theme-color2), var(--text-color2));
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, var(--theme-color2), var(--theme-color1));
+  width: 100vw;
+  height: 85vh;
+  padding-bottom: 3rem;
+  margin-top: -2rem;
+}
+
+#contact .contact-head {
+  text-align: center;
+}
+
+#contact .contact-head h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--text-color1)
+}
+#contact .contact-head p {
+  font-size: 1.8rem;
+  margin: -20px 0 70px 0;
+  color: var(--text-color2);
+}
+
+#contact .contact-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding-right: 1rem;
+}
+
+#contact .contact-links li{
+  list-style: none;
+}
+
+
+#contact .contact-links li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: var(--text-color1);
+  padding: 5px;
+}
+
+#contact .contact-links li a i {
+  font-size: 1.5rem;
+  color: var(--text-color1);
+  padding-right: 10px;
+}
+
+#contact .contact-links li a:hover {
+  background: linear-gradient(45deg, var(--theme-color1), var(--theme-color2), var(--text-color2));
+  border-radius: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  background-color: var(--theme-color1);
+  margin: -1rem 0;
+  padding: 10px 20px;
+  border-top: 5px solid var(--text-color2);
+  font-size: 1rem;
+  color: var(--text-color1);
+}
+
+@media only screen and (max-width: 1175px) {
+  #navbar ul {
+    justify-content: space-around;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #projects h2 { 
+    visibility: hidden;
+    font-size: 0;
+  }
+  #projects h2:after {
+    visibility: visible;
+    content: "Responsive Web Projects";
+    font-size: 35px;
+  }
+  #contact .contact-links {
+    flex-direction: column;
+  }
+  footer {
+    flex-direction: column;
+  }
+  footer p {
+    margin: 0;
+    padding: 5px;
+    text-align: justify;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #navbar ul {
+    padding-top: 3px;
+  }
+  #navbar ul li a {
+    font-size: 1.5rem;
+  }
+  #welcome-section .welcome-title h1 {
+    font-size: 2.5rem;
+  }
+  #welcome-section .welcome-title span {
+    font-size: 2.5rem;
+  }
+  #welcome-section p {
+    font-size: 1.5rem;
+  }
+  #projects h2:after {
+    font-size: 30px;
+  }
+  #contact .contact-head h2 {
+    font-size: 2.5rem;
+  }
+  #contact .contact-head p {
+    font-size: 1.5rem;
+  }
+}

@@ -5,6 +5,7 @@ body {
   text-align: center;
   color: rgb(46, 43, 43);
   margin: 0;
+  min-width: 390px;
 } 
 
 main {
@@ -49,8 +50,6 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-
- 
 }
 
 #tribute-info ul {
@@ -100,6 +99,67 @@ a:hover {
   color:rgb(52, 32, 141);
 }
 
+@media only screen and (max-width:660px) {
+  h1 {
+    font-size: 45px;
+  }
+  .under-title {
+    font-size: 17px;
+  }
+  h2 {font-size: 22px;}
+  
+  #img-div figcaption {
+    font-size: 15px;
+  }
+  #tribute-info ul li {
+    font-size: 15px;
+  }
+  #quote { 
+    font-size: 15px;
+  }
+  .last-p {
+    font-size: 18px;
+  }
+}
 
+@media only screen and (max-width:533px) {
+  h1 {
+    font-size: 38px;
+  }
+  .under-title {
+    font-size: 15px;
+  }
+  h2 {font-size: 19px;}
+  
+  #img-div figcaption {
+    font-size: 13px;
+  }
+  #quote { 
+    font-size: 14px;
+  }
+  .last-p {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width:473px) {
+  h1 {
+    font-size: 35px;
+  }
+  .under-title {
+    font-size: 14px;
+  }
+  h2 {font-size: 16px;}
+  
+  #img-div figcaption {
+    font-size: 11px;
+  }
+  #quote { 
+    font-size: 13px;
+  }
+  .last-p {
+    font-size: 14px;
+  }
+}
 
 

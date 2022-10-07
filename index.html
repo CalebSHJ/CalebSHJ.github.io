@@ -2,33 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Caleb's Project</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Portfolio Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/584773e4d6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1>Responsive Web Projects</h1>
-  <div class="projects">
-    <h2>Caleb's Projects</h2>
-    <ol class="project-link">
-      <li><a href="1.html" target="_blank">
-        <p>1st Project-Survey Form</p>
-        <img src="1.png" alt="">
-      </a></li>
-      <li><a href="2.html" target="_blank">
-        <p>2nd Project-Tribute Page</p>
-        <img src="2.png" alt="">
-      </a></li>
-      <li><a href="3.html" target="_blank">
-        <p>3rd Project-Technical Document</p>
-        <img src="3.png" alt="">
-      </a></li>
-      <li><a href="4.html" target="_blank">
-        <p>4th Project-Produnt Landing Page</p>
-        <img src="4.png" alt="">
-      </a></li>
-    </ol>
-  </div> 
+  <nav id="navbar">
+    <ul>
+      <li><a href="#welcome-section">Welcome</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <section id="welcome-section">
+    <div class="welcome-title"><span>✋🏼</span>
+      <h1>Hello I am Caleb</h1>
+    </div>
+    <p>a freeCodeCamp student</p>
+  </section>
+  <section id="projects">
+    <h2>Projects for Responsive Web Certificate</h2>
+    <div class="project-links">
+      <a href="1.html" target="_blank" class="project-tile">
+        <p>Survey Form</p>
+        <img src="1.png" alt="survey form">
+      </a>
+      <a href="2.html" target="_blank" class="project-tile">
+       <p>Tribute Page</p>
+        <img src="2.png" alt="tribute page">
+      </a>
+      <a href="3.html" target="_blank" class="project-tile">
+        <p>Technical Document</p>
+        <img src="3.png" alt="technical doc">
+      </a>
+      <a href="4.html" target="_blank" class="project-tile">
+        <p>Product Landing Page</p>
+        <img src="4.png" alt="product landing ">
+      </a>
+    </div>
+    <p class="project-more"><a href="https://codepen.io/calebshj">Go To Check More Projects</a></p>
+  </section>
+  <section id="contact">
+    <div class="contact-head">
+      <h2>What do you think?</h2>
+      <p>Is it enough for my Certificate?</p>
+    </div>
+    <ul class="contact-links">
+      <li>
+        <a id="profile-link" href="https://github.com/CalebSHJ" target="_blank"><i class="fa-brands fa-github"></i>GitHub</a>
+      </li>
+      <li>
+        <a id="profile-link" href="https://www.freecodecamp.org/fcc1af38e68-6f96-4d81-bf71-165bb6b12220" target="_blank"><i class="fa-brands fa-free-code-camp"></i>freeCodeCamp</a>
+      </li>
+      <li>
+        <a id="profile-link" href="mailto:littlelight@example.com"><i class="fa-solid fa-envelope"></i>Email Me</a>
+      </li>
+      <li>
+        <a id="profile-link" href="tel:+1-777-777-7777"><i class="fa-solid fa-phone"></i>Call Me</a>
+      </li>
+    </ul>
+  </section>
+  <footer>
+    <p>**This is just a fake portfolio. All the projects and contact details given are not real.</p>
+    <p>© 2022 Little Light</p>
+  </footer>
 </body>
 </html>
