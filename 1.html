@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="1.css">
+  <link rel="stylesheet" href="styles.css">
   <title>Little Light Survey Form</title>
-</head>
+</head>  
 <body>
   <main>
     <header>
@@ -14,9 +14,9 @@
     <form id="survey-form">
       <section>
         <fieldset>
-          <label for="name-label">Name<input id="name-label" name="name-label" type="text" required placeholder="Enter your name" /></label>
-          <label for="email-label">Email<input id="email-label" name="email-label" type="email" required placeholder="Enter your Email" /></label>
-          <label for="number-label">Age <span>(optional)</span><input id="number-label"  name="number-label" type="number" min= "8" max="120" placeholder="Age" /></label>
+          <label id="name-label" for="name">Name<input id="name" name="name" type="text" required placeholder="Enter your name" /></label>
+          <label id="email-label" for="email">Email<input id="email" name="email" type="email" required placeholder="Enter your Email" /></label>
+          <label id="number-label" for="number">Age <span>(optional)</span><input id="number"  name="number" type="number" min= "8" max="120" placeholder="Age" /></label>
           <label for="current-role"> Which option best describes your current role in Little Light Ministries?
             <select id="current-role">
               <option value="">select current role</option>
@@ -33,12 +33,12 @@
         <fieldset>
           <p class="in-form">Would you recommend Little Light Ministries to a friend?</p>
             <ul>
-              <li><label for="definitely"><input id="definitely" type="radio" name="recommend-type" /> Definitely</label></li>
-              <li><label for="maybe"><input id="maybe" type="radio" name="recommend-type" /> Maybe</label></li>
-              <li><label for="not-sure"><input id="not-sure" type="radio" name="recommend-type" /> Not Sure</label></li>
+              <li><label for="definitely"><input id="definitely" type="radio" name="recommend-type" value="Definitely" /> Definitely</label></li>
+              <li><label for="maybe"><input id="maybe" type="radio" name="recommend-type" value="Maybe" /> Maybe</label></li>
+              <li><label for="not-sure"><input id="not-sure" type="radio" name="recommend-type" value="Not Sure"  /> Not Sure</label></li>
             </ul>
           <p class="in-form">Why did you choose that?</p>
-          <label for="recommend-reason">
+          <label for="recommend-reason"> 
             <textarea id= "recommend-reason" name="recommend-reason" rows="3" cols="30" placeholder="Enter your comment here..."></textarea>
           </label>
           <p class="in-form">What is your favorite ministry of Little Light Ministries?</p>
@@ -53,25 +53,25 @@
           </label>
           <p class="in-form">What kind of new ministry do you want us to start next year?</p>
           <ul>
-            <li><label for="youth"><input id="youth" name="youth" type="checkbox">Youth Ministry</label></li>
-            <li><label for="college"><input id="college" name="college" type="checkbox">College Ministry</label></li>
-            <li><label for="worship"><input id="worship" name="worship" type="checkbox">Worship Ministry</label></li>
-            <li><label for="homeless"><input id="homeless" name="homeless" type="checkbox">Homeless Ministry</label></li>
-            <li><label for="mission-field"><input id="mission-field" name="mission-field" type="checkbox">Visit Mission Field</label></li>
-            <li><label for="publishing"><input id="publishing" name="publishing" type="checkbox">Publishing Ministry</label></li>
-          </ul>
+            <li><label for="youth"><input id="youth" name="youth" type="checkbox" value="Youth Ministry">Youth Ministry</label></li>
+            <li><label for="college"><input id="college" name="college" type="checkbox" value="College Ministry">College Ministry</label></li>
+            <li><label for="worship"><input id="worship" name="worship" type="checkbox" value="Worship Ministry">Worship Ministry</label></li>
+            <li><label for="homeless"><input id="homeless" name="homeless" type="checkbox" value="Homeless Ministry">Homeless Ministry</label></li>
+            <li><label for="mission-field"><input id="mission-field" name="mission-field" type="checkbox" value="Visit Mission Field">Visit Mission Field</label></li>
+            <li><label for="publishing"><input id="publishing" name="publishing" type="checkbox" value="Publishing Ministry">Publishing Ministry</label></li>
+          </ul>         
         </fieldset>
       </section>
       <section>
         <fieldset>
           <label for="comments-and-suggestions">Any comments or suggestions?
-            <textarea id= "comments-and-suggestions" name="comments-and-suggestions" rows="4" cols="40" placeholder="Enter your comment here..."></textarea>
+            <textarea id= "comments-and-suggestions" name="comments-and-suggestions" rows="4" cols="40" placeholder="Enter your comment here..."></textarea> 
           </label>
           </fieldset>
         <input id="submit" type="submit" value="Submit" />
-      </section>
+      </section> 
     </form>
   </main>
-
+  
 </body>
 </html>

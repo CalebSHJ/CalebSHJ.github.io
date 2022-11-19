@@ -19,7 +19,7 @@ body {
   margin: 0;
   padding: 0; 
   width: 100vw;
-  min-width: 390px;
+  min-width: 290px;
 }
 
 #navbar {
@@ -294,6 +294,9 @@ footer {
   }
   #projects h2:after {
     font-size: 30px;
+  }
+  #projects .project-more a {
+    font-size: 1.2rem;
   }
   #contact .contact-head h2 {
     font-size: 2.5rem;

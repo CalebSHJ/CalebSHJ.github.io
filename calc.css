@@ -1,0 +1,89 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+  max-width: 400px;
+  margin: 15vh auto 0 auto;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 2%;
+  box-shadow: 2px 3px 40px 0px darkgoldenrod;
+  padding: 0;
+}
+
+#display {
+  background-color: rgb(166, 99, 6);
+  color: whitesmoke;
+  text-align: right;
+  height: 40px;
+  /* line-height: 70px; */
+  padding : 8px 8px;
+  font-size: 25px;
+}
+
+#result {
+  position: relative;
+  background-color: rgb(166, 99, 6);
+  color: whitesmoke;
+  text-align: right;
+  height: 35px;
+  /* line-height: 70px; */
+  padding : 16px 8px;
+  font-size: 35px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border-bottom: 1px solid darkgray;
+  border-left: 1px solid darkgray;
+}
+
+.buttons > div {
+  text-align: center;
+  font-size: 25px;
+  padding: 20px 15px;
+  border-right: 1px solid darkgrey;
+  border-top: 1px solid darkgray;
+  cursor: pointer;
+}
+
+.buttons > div:hover {
+  background-color: rgb(32, 24, 24);
+  color: whitesmoke;
+  transition: ease-in-out;
+}
+
+/* .buttons > #equal {
+  background-color: rgb(166, 99, 6);
+  color: whitesmoke;
+  text-align: center;
+  font-size: 25px;
+  padding: 20px 15px;
+  cursor: pointer;
+} */
+
+.log_box {
+  text-align: left;
+  margin: 30px auto 0 auto;
+  width: 400px;
+}
+.log {
+  max-width: 400px;
+  margin: 30px auto 0 auto;
+  padding: 7px;
+  border-radius: 2%;
+  border: 2px solid rgb(166, 99, 6);
+}
+
+.log > legend {
+  font-size: 20px;
+  text-align: center;
+  
+}
+
+.log > div {
+  font-size: 15px;
+}
+
+
+
