@@ -14,7 +14,7 @@ body {
   background-color: rgb(166, 99, 6);
   color: whitesmoke;
   text-align: right;
-  height: 40px;
+  min-height: 40px;
   /* line-height: 70px; */
   padding : 8px 8px;
   font-size: 25px;
